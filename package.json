@@ -1,0 +1,33 @@
+{
+	"name": "bragg-cloudwatch-log",
+	"version": "0.0.0",
+	"description": "Bragg middleware to handle CloudWatch Logs events",
+	"license": "MIT",
+	"repository": "simon.jang/bragg-cloudwatch-log",
+	"author": {
+		"name": "Simon Jang",
+		"email": "simon.jang.contact@gmail.com",
+		"url": "github.com/SimonJang"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"bragg",
+		"middleware",
+		"aws",
+		"cloudwatch logs"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^2.1.0",
+		"nyc": "^14.1.1",
+		"xo": "^0.24.0"
+	}
+}
