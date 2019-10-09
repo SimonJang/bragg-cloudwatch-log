@@ -1,6 +1,6 @@
 {
 	"name": "bragg-cloudwatch-log",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Bragg middleware to handle CloudWatch Logs events",
 	"license": "MIT",
 	"repository": "simon.jang/bragg-cloudwatch-log",
