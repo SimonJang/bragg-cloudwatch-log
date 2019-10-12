@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Bragg middleware to handle CloudWatch Logs events",
 	"license": "MIT",
-	"repository": "simon.jang/bragg-cloudwatch-log",
+	"repository": "SimonJang/bragg-cloudwatch-log",
 	"author": {
 		"name": "Simon Jang",
 		"email": "simon.jang.contact@gmail.com",

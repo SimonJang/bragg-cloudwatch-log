@@ -11,13 +11,15 @@ $ npm install bragg-cloudwatch-log
 
 ## Usage
 
+All the events will be routed to `post` `cloudwatch:log`. You can use that route to handle the CloudWatch log events.
+
 ```js
 const app = require('bragg')();
 const router = require('bragg-router')();
 const cloudWatchLog = require('bragg-cloudwatch-log');
 
-// Listen for events in the `TopicName` topic
-router.post('cloudwatch:logs', ctx => {
+// Listen for CloudWatch Log events
+router.post('cloudwatch:log', ctx => {
 	/**
 	 * {
 	 *		"messageType": "DATA_MESSAGE",
@@ -36,7 +38,7 @@ router.post('cloudwatch:logs', ctx => {
 	 *		]
 	 *	}
 	 */
-    console.log(ctx.request.body) // [{bucket: 'someBucket', key: 'foo.jpg', eventName: 'ObjectCreated:Put'}]
+    console.log(ctx.request.body)
 });
 
 app.use(cloudWatchLog());
